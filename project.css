@@ -1,0 +1,200 @@
+/* Projects Section */
+.projects {
+    padding: 5rem 13rem;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-cards .card {
+    width: 30rem;
+    background-color: var(--nav-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-cards .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project-cards .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-cards .card p {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.project-cards .card .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-cards .card .btn:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/* Responsive Design for Projects Section */
+@media (max-width: 768px) {
+    .projects {
+        padding: 3rem 2rem;
+    }
+
+    .project-cards .card {
+        width: 100%;
+    }
+
+    .project-cards .card img {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects h2 {
+        font-size: 3rem;
+    }
+
+    .project-cards .card p {
+        font-size: 1.4rem;
+    }
+
+    .project-cards .card .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Skills Section */
+.skills {
+    padding: 5rem 13rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    /* Background color from root variables */
+    color: var(--font-color);
+    /* Text color from root variables */
+}
+
+.skills h2 {
+    font-size: 3.6rem;
+    /* Main heading font size */
+    margin-bottom: 3rem;
+    /* Spacing below the heading */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--font-color);
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows icons to wrap on smaller screens */
+    justify-content: center;
+    gap: 2rem;
+    /* Spacing between icons */
+}
+
+.skills-icons .icon {
+    padding: 1.5rem 2rem;
+    /* Space inside the icon box */
+    font-size: 1.8rem;
+    /* Font size of skill names */
+    font-weight: bold;
+    background-color: var(--nav-color);
+    /* Icon background color */
+    color: var(--font-color);
+    /* Text color */
+    border-radius: 5rem;
+    /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Smooth hover effect */
+    text-align: center;
+}
+
+.skills-icons .icon:hover {
+    background-color: var(--hover-color);
+    /* Hover color for icons */
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .skills {
+        padding: 4rem 8rem;
+        /* Reduce padding for medium screens */
+    }
+
+    .skills h2 {
+        font-size: 3.2rem;
+    }
+
+    .skills-icons .icon {
+        font-size: 1.6rem;
+        /* Smaller font size for medium screens */
+        padding: 1.2rem 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 3rem 5rem;
+        /* Further reduce padding */
+    }
+
+    .skills h2 {
+        font-size: 3rem;
+    }
+
+    .skills-icons .icon {
+        font-size: 1.4rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        padding: 2rem 2rem;
+        /* Minimal padding for smaller devices */
+    }
+
+    .skills h2 {
+        font-size: 2.8rem;
+    }
+
+    .skills-icons .icon {
+        font-size: 1.2rem;
+        /* Smaller font for mobile */
+        padding: 0.8rem 1.2rem;
+    }
+}
